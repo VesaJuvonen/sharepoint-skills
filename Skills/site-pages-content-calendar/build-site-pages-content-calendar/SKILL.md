@@ -79,4 +79,4 @@ Reply with:
 - Don’t constrain the calendar to a small fixed-size widget unless the user explicitly asks for an embedded compact view.
 - Don’t make page details accessible only through hover.
 - Don’t place details below the calendar; clicking a visible title must open a right-side overlay drawer.
-- If tool calls fail or return empty data, say so plainly and don’t invent content.sa
+- If tool calls fail or return empty data, say so plainly and don’t invent content.
