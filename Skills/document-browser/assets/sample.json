@@ -3,12 +3,12 @@
     "name": "pnp-sharepoint-skills-document-browser",
     "source": "pnp",
     "title": "Document Browser",
-    "shortDescription": "Creates a professional live-linked document browser dashboard for a SharePoint document library with real metadata, Knowledge Explorer styling, 3-card layout, and reliable Open/Download links.",
+    "shortDescription": "Creates a professional live-linked document browser dashboard for a SharePoint document library with real metadata, navy-and-yellow design system, 3-card layout, and reliable Open/Download links.",
     "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/document-browser",
     "longDescription": [
       "Generates a fully self-contained, live-linked HTML dashboard for browsing a SharePoint document library.",
       "Uses real metadata fields, search, filters, Document Title and Document Owner on cards, hover/focus abstract previews, and a clean 3-column desktop card layout.",
-      "Applies Knowledge Explorer header styling (navy, blue, yellow, sand palette) with a visible Refresh live data control.",
+      "Applies a clean navy-and-yellow design system with rounded hero header and a visible Refresh live data control.",
       "Includes robust, decoded server-relative Open and Download links that work inside the SharePoint HTML preview experience.",
       "Ideal for knowledge bases, document libraries with rich metadata, and teams that need a scannable, filterable document browser."
     ],
