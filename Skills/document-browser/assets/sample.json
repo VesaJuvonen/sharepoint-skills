@@ -1,0 +1,48 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-document-browser",
+    "source": "pnp",
+    "title": "Document Browser",
+    "shortDescription": "Creates a professional live-linked document browser dashboard for a SharePoint document library with real metadata, Knowledge Explorer styling, 3-card layout, and reliable Open/Download links.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/document-browser",
+    "longDescription": [
+      "Generates a fully self-contained, live-linked HTML dashboard for browsing a SharePoint document library.",
+      "Uses real metadata fields, search, filters, Document Title and Document Owner on cards, hover/focus abstract previews, and a clean 3-column desktop card layout.",
+      "Applies Knowledge Explorer header styling (navy, blue, yellow, sand palette) with a visible Refresh live data control.",
+      "Includes robust, decoded server-relative Open and Download links that work inside the SharePoint HTML preview experience.",
+      "Ideal for knowledge bases, document libraries with rich metadata, and teams that need a scannable, filterable document browser."
+    ],
+    "creationDateTime": "2026-08-15",
+    "updateDateTime": "2026-08-15",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      { "key": "SAMPLE-TYPE", "value": "SharePoint-AI-Skill" },
+      { "key": "SKILL-CATEGORY", "value": "Document Management" }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/document-browser/assets/preview.png",
+        "alt": "Document Browser skill showing a live-linked dashboard with document cards"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "anandVragav",
+        "pictureUrl": "https://github.com/anandVragav.png",
+        "name": "Anand"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      }
+    ]
+  }
+]
