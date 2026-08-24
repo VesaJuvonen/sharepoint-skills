@@ -1,6 +1,6 @@
 # Find Relevant Skill
 
-![Find Relevant Skill in action](assets/preview.png)
+![Find Relevant Skill in action](./assets/preview.png)
 
 `find-relevant-skill` is a meta-skill for SharePoint AI agents: before handling a recurring or site-specific request, it checks whether this site already has a local skill that covers it, and — only with explicit, per-request confirmation — offers to search the public [PnP SharePoint Skills](https://github.com/pnp/sharepoint-skills) repository for a reusable one. It then walks through a risk assessment before recommending that anything be installed, adapted, or referenced.
 
@@ -17,6 +17,7 @@ The goal is to stop agents from reinventing site-specific procedures that alread
 ## When to use
 
 Ask things like:
+
 - "Do we have a skill for this?"
 - "Check site skills first"
 - "Find a relevant skill"
@@ -44,4 +45,6 @@ This skill has no bundled demo files — it operates on whatever local skills an
 
 ## Disclaimer
 
-THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+<img src="https://m365-visitor-stats.azurewebsites.net/sharepoint-skills/skills/find-relevant-skill" />

@@ -44,7 +44,7 @@ Be on the site whose news you want to review, name a site or pages library, or s
 
 | Version | Date | Comments |
 | --- | --- | --- |
-| 1.0 | July 23, 2026 | Initial Release |
+| 1.0 | July 2026 | Initial Release |
 
 ## Disclaimer
 

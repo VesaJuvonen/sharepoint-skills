@@ -1,5 +1,5 @@
 ---
-name: build-site-pages-content-calendar
+name: site-pages-content-calendar
 description: |-
   Build a full-size, interactive, visually rich HTML content calendar from a SharePoint Site Pages library, using real page metadata and safe status classification.
 

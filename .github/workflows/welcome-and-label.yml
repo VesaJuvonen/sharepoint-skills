@@ -1,0 +1,89 @@
+name: Welcome and label new contributions
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request_target:
+    types:
+      - opened
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    name: Add welcome message and default label
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Welcome and label contribution
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isIssue = context.eventName === "issues";
+
+            const issueMessage = [
+              "Thank you for opening this issue.",
+              "",
+              "A maintainer will review the details and update the labels or next steps.",
+              "",
+              "Thank you for contributing to the community."
+            ].join("\n");
+            const pullRequestMessage = [
+              "Thank you for contributing to SharePoint Skills.",
+              "",
+              "The automated skill checks will run shortly. A maintainer will review the results and update the labels or next steps.",
+              "",
+              "Thank you for contributing to the community."
+            ].join("\n");
+
+            const settings = isIssue
+              ? {
+                  label: "Needs: Triage :mag:",
+                  color: "8c51c3",
+                  description: "New issue or pull request awaiting initial review.",
+                  message: issueMessage
+                }
+              : {
+                  label: "Needs: Triage :mag:",
+                  color: "8c51c3",
+                  description: "New issue or pull request awaiting initial review.",
+                  message: pullRequestMessage
+                };
+            const itemNumber = isIssue
+              ? context.payload.issue.number
+              : context.payload.pull_request.number;
+
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: settings.label
+              });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: settings.label,
+                color: settings.color,
+                description: settings.description
+              });
+            }
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: itemNumber,
+              labels: [settings.label]
+            });
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: itemNumber,
+              body: settings.message
+            });
