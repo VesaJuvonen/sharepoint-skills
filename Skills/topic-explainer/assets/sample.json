@@ -1,0 +1,47 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-topic-explainer",
+    "source": "pnp",
+    "title": "Topic Explainer",
+    "shortDescription": "Creates a polished, interactive explainer dashboard for any topic using a clean professional card-based structure with concept cards, comparisons, decision guides, use cases, and governance notes.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/topic-explainer",
+    "longDescription": [
+      "Generates a fully self-contained, interactive HTML dashboard for explaining business, technical, or strategic topics.",
+      "Uses an adaptive layout with hero section, core concept cards, active detail panel, comparison tables, optional decision guides, use cases, governance notes, and source attribution.",
+      "Outputs clean, professional content that is scannable, actionable, and ready to save directly in SharePoint or share as a single .html file.",
+      "Ideal for knowledge sharing, onboarding, strategy communication, training materials, and executive briefings."
+    ],
+    "creationDateTime": "2026-07-13",
+    "updateDateTime": "2026-07-23",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      { "key": "SAMPLE-TYPE", "value": "SharePoint-AI-Skill" },
+      { "key": "SKILL-CATEGORY", "value": "Knowledge Management" }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/topic-explainer/assets/preview.png",
+        "alt": "Topic Explainer skill generating an interactive dashboard for a business topic"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "anandVragav",
+        "pictureUrl": "https://github.com/anandVragav.png",
+        "name": "Anand"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      }
+    ]
+  }
+]

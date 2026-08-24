@@ -1,0 +1,47 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-flashcards-dashboard",
+    "source": "pnp",
+    "title": "Flashcards Dashboard",
+    "shortDescription": "Creates an interactive HTML learning dashboard from a source file with animated flip flashcards, filters, source links, Review missed mode, Shuffle, and progress tracking.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/flashcards-dashboard",
+    "longDescription": [
+      "Generates a fully self-contained interactive HTML learning dashboard from PowerPoint, PDF, Word, or other readable files.",
+      "Extracts key concepts into validated flashcards that include question, concise answer, expanded detail, hint, category, difficulty, and source anchors with clickable links back to the original document.",
+      "Includes animated flip cards, category and difficulty filters, hover/focus detail panels, Study / Shuffle / Review missed modes, and progress tracking.",
+      "Designed for training, onboarding, revision, and knowledge checks inside SharePoint and Microsoft 365 Copilot experiences."
+    ],
+    "creationDateTime": "2026-07-23",
+    "updateDateTime": "2026-07-23",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      { "key": "SAMPLE-TYPE", "value": "SharePoint-AI-Skill" },
+      { "key": "SKILL-CATEGORY", "value": "Learning & Training" }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/flashcards-dashboard/assets/preview.png",
+        "alt": "Flashcards Dashboard skill showing interactive flip cards"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "anandVragav",
+        "pictureUrl": "https://github.com/anandVragav.png",
+        "name": "Anand"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      }
+    ]
+  }
+]
