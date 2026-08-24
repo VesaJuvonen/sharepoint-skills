@@ -31,13 +31,13 @@ Best when you need a quick visual review of SharePoint page activity, publishing
 
 | Solution                          | Author(s)                                                                                                              |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| build-site-pages-content-calendar | Sandeep P S ( [GitHub](https://github.com/Sandeep-FED) &#124; [LinkedIn](https://www.linkedin.com/in/sandeepps1299/) ) |
+| site-pages-content-calendar       | Sandeep P S ( [GitHub](https://github.com/Sandeep-FED) &#124; [LinkedIn](https://www.linkedin.com/in/sandeepps1299/) ) |
 
 ## Version history
 
-| Version | Date     | Comments        |
-| ------- | -------- | --------------- |
-| 1.0     | Jul 2026 | Initial Release |
+| Version | Date      | Comments        |
+| ------- | --------- | --------------- |
+| 1.0     | July 2026 | Initial Release |
 
 ## Disclaimer
 

@@ -1,7 +1,7 @@
 [
   {
-    "name": "build-site-pages-content-calendar",
-    "source": "custom",
+    "name": "pnp-sharepoint-skills-site-pages-content-calendar",
+    "source": "pnp",
     "title": "Site Pages Content Calendar",
     "shortDescription": "Builds a full-size, interactive SharePoint Site Pages content calendar dashboard from real page metadata.",
     "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/site-pages-content-calendar",
@@ -26,7 +26,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "./assets/preview.png",
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/site-pages-content-calendar/assets/preview.png",
         "alt": "Site Pages Content Calendar skill preview"
       }
     ],
