@@ -1,0 +1,109 @@
+---
+import { GitFork, Menu } from '@lucide/astro';
+import '../styles/global.css';
+import { sitePath } from '../lib/catalog';
+
+interface Props {
+	title?: string;
+	description?: string;
+	image?: string;
+}
+
+const {
+	title = 'SharePoint Skills',
+	description = 'Community-built skills for Microsoft 365 Copilot in SharePoint.',
+	image = '/images/keyart-bg.webp',
+} = Astro.props;
+const pageTitle = title === 'SharePoint Skills' ? title : `${title} | SharePoint Skills`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(sitePath(image), Astro.site);
+const currentPath = Astro.url.pathname;
+const navigation = [
+	{ label: 'Skills', href: '/' },
+	{ label: 'Getting started', href: '/getting-started/' },
+	{ label: 'Contributors', href: '/contributors/' },
+	{ label: 'Contributing', href: '/contributing/' },
+];
+const isCurrent = (href: string) =>
+	href === '/'
+		? currentPath === sitePath('/') ||
+			currentPath === sitePath('') ||
+			currentPath.startsWith(sitePath('/skills/')) ||
+			currentPath.startsWith(sitePath('/categories/')) ||
+			currentPath.startsWith(sitePath('/whats-new/'))
+		: currentPath.startsWith(sitePath(href));
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="icon" href={sitePath('/images/pnp.svg')} type="image/svg+xml" />
+		<link rel="canonical" href={canonicalUrl} />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content={imageUrl} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<title>{pageTitle}</title>
+		<style define:vars={{
+			'keyart-image': `url(${sitePath('/images/keyart-bg.webp')})`,
+			'side-left-image': `url(${sitePath('/images/side-bg-left.webp')})`,
+			'side-right-image': `url(${sitePath('/images/side-bg-right.webp')})`,
+		}}></style>
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">Skip to content</a>
+		<header class="site-header">
+			<div class="spectrum" aria-hidden="true"></div>
+			<div class="site-header__inner container">
+				<a class="brand" href={sitePath('/')} aria-label="SharePoint Skills home">
+					<img src={sitePath('/images/pnp.svg')} alt="" width="32" height="32" />
+					<span>SharePoint <strong>Skills</strong></span>
+				</a>
+				<nav class="desktop-nav" aria-label="Primary navigation">
+					{navigation.map((item) => (
+						<a href={sitePath(item.href)} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+							{item.label}
+						</a>
+					))}
+					<a class="nav-github" href="https://github.com/pnp/sharepoint-skills">
+						<GitFork size={18} aria-hidden="true" /> GitHub
+					</a>
+				</nav>
+				<details class="mobile-nav">
+					<summary title="Open navigation" aria-label="Open navigation"><Menu size={22} /></summary>
+					<nav aria-label="Mobile navigation">
+						{navigation.map((item) => <a href={sitePath(item.href)}>{item.label}</a>)}
+						<a href="https://github.com/pnp/sharepoint-skills">GitHub</a>
+					</nav>
+				</details>
+			</div>
+		</header>
+		<main id="main-content">
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<div class="container site-footer__inner">
+				<div>
+					<strong>Microsoft 365 & Power Platform Community</strong>
+					<p>Sharing is caring. Built by the community, for the community.</p>
+				</div>
+				<nav aria-label="Footer navigation">
+					<a href={sitePath('/whats-new/')}>What's new</a>
+					<a href={sitePath('/categories/')}>Categories</a>
+					<a href={sitePath('/catalog.json')}>Catalog JSON</a>
+					<a href="https://github.com/pnp/sharepoint-skills/issues/new/choose">Report an issue</a>
+					<a href="https://github.com/pnp/sharepoint-skills/security/policy">Security</a>
+					<a href="https://github.com/pnp/sharepoint-skills/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a>
+					<a href="https://github.com/pnp/sharepoint-skills/blob/main/LICENSE">MIT license</a>
+				</nav>
+			</div>
+		</footer>
+	</body>
+</html>

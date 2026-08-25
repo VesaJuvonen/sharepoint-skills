@@ -6,6 +6,8 @@ A curated library of AI skills for the latest AI features in Microsoft 365 Share
 
 > **Status:** Active — new content added regularly.
 
+**[Browse the SharePoint Skills gallery](https://pnp.github.io/sharepoint-skills/)**
+
 ## Watch the Overview
 
 [![Watch the SharePoint Skills overview](https://img.youtube.com/vi/FcLy_32vblM/hqdefault.jpg)](https://www.youtube.com/watch?v=FcLy_32vblM)
@@ -14,9 +16,7 @@ A curated library of AI skills for the latest AI features in Microsoft 365 Share
 
 ## What's Inside
 
-| Folder | Purpose |
-|---|---|
-| [`Skills/`](./Skills/) | AI skills — each skill in its own folder, ready to install into a SharePoint agent |
+- [`Skills/`](./Skills/): AI skills — each skill in its own folder, ready to install into a SharePoint agent
 
 ---
 
