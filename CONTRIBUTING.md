@@ -4,6 +4,8 @@ Contributions and corrections are welcome! This guide covers everything you need
 
 Use the [GitHub issue forms](https://github.com/pnp/sharepoint-skills/issues/new/choose) to report a reproducible problem or propose a focused user story. Pull requests include a short template for affected folders, verification, and screenshots when relevant.
 
+By participating, you agree to follow the [Code of Conduct](./CODE_OF_CONDUCT.md). Report suspected security concerns according to the [Security Policy](./SECURITY.md), and never include credentials or real tenant, customer, or personal data in issues, pull requests, demos, or samples.
+
 ## Contribution workflow
 
 1. Fork the repo and create a branch: `git checkout -b skill/your-skill-name`
